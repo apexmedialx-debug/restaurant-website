@@ -1,33 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream:      oklch(97% 0.007 75);
-  --color-ivory:      oklch(94% 0.009 78);
-  --color-ink:        oklch(14% 0.015 40);
-  --color-ink-mid:    oklch(22% 0.015 40);
-  --color-burg:       oklch(32% 0.095 15);
-  --color-burg-light: oklch(45% 0.1 15);
-  --color-gold:       oklch(70% 0.09 68);
-  --color-gold-dim:   oklch(60% 0.075 68);
-  --color-stone:      oklch(55% 0.012 60);
-  --color-pebble:     oklch(78% 0.008 65);
+  --color-cream:       oklch(97% 0.007 75);
+  --color-ivory:       oklch(94% 0.009 78);
+  --color-sand:        oklch(90% 0.012 76);
+  --color-ink:         oklch(10% 0.015 40);
+  --color-ink-mid:     oklch(20% 0.015 40);
+  --color-burg:        oklch(30% 0.1 15);
+  --color-burg-light:  oklch(42% 0.11 15);
+  --color-gold:        oklch(68% 0.1 68);
+  --color-gold-dim:    oklch(58% 0.08 68);
+  --color-stone:       oklch(52% 0.012 60);
+  --color-pebble:      oklch(74% 0.008 65);
 
-  --font-display: var(--font-playfair), "Times New Roman", Georgia, serif;
-  --font-body:    var(--font-dm-sans), system-ui, sans-serif;
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-body:    var(--font-raleway), system-ui, sans-serif;
 }
 
-:root {
-  scroll-behavior: smooth;
-}
+:root { scroll-behavior: smooth; }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
   background-color: oklch(97% 0.007 75);
-  color: oklch(14% 0.015 40);
+  color: oklch(10% 0.015 40);
   font-family: var(--font-body);
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -36,12 +34,11 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: var(--font-display);
   font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  line-height: 1.05;
 }
 
 ::selection {
-  background-color: oklch(32% 0.095 15 / 0.15);
+  background-color: oklch(30% 0.1 15 / 0.15);
 }
 
 @media (prefers-reduced-motion: reduce) {

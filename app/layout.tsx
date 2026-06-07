@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Cormorant, Raleway } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant({
+  variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
   weight: ["300", "400", "500"],
   display: "swap",
@@ -20,14 +20,14 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "ALMA — Portuguese Restaurant",
   description:
-    "A Lisbon-born kitchen rooted in tradition and driven by season. Bacalhau, cataplana, and natural wine in the heart of the city.",
+    "A Lisbon-born kitchen rooted in tradition and driven by season. Bacalhau, cataplana, and natural wine in the heart of Alfama.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${raleway.variable}`}>
       <body>{children}</body>
     </html>
   );
