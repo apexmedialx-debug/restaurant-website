@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer style={{ background: 'oklch(10% 0.015 40)', paddingTop: '5rem', paddingBottom: '3rem' }}>
+    <footer style={{ background: 'oklch(10% 0.015 40)', paddingTop: '3.5rem', paddingBottom: '2.5rem' }}>
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Large italic brand */}

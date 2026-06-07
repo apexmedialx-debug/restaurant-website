@@ -44,13 +44,31 @@ export default function About() {
   const imgRef = useRef<HTMLDivElement>(null);
   const imgInView = useInView(imgRef, { once: true, margin: '-80px' });
   const lineRef = useRef<HTMLDivElement>(null);
-  const lineInView = useInView(lineRef, { once: true, margin: '-60px' });
 
   return (
-    <section id="about" style={{ paddingTop: '9rem', paddingBottom: '9rem' }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="about" style={{ paddingTop: '5.5rem', paddingBottom: '5.5rem', position: 'relative', overflow: 'hidden' }}>
+      {/* Subtle background food image */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: 'none',
+        }}
+      >
+        <Image
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=60"
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: 'cover', opacity: 0.045 }}
+          aria-hidden
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6" style={{ position: 'relative', zIndex: 1 }}>
         <div
-          style={{ display: 'grid', gap: '5rem', gridTemplateColumns: '1fr' }}
+          style={{ display: 'grid', gap: '3rem', gridTemplateColumns: '1fr' }}
           className="lg:grid-cols-2"
         >
           {/* Text — left */}

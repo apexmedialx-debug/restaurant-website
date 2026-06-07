@@ -126,7 +126,7 @@ export default function Gallery() {
     <section
       id="gallery"
       ref={ref}
-      style={{ paddingTop: '8rem', paddingBottom: '8rem', background: 'oklch(10% 0.015 40)' }}
+      style={{ paddingTop: '5rem', paddingBottom: '5rem', background: 'oklch(10% 0.015 40)' }}
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
@@ -135,9 +135,9 @@ export default function Gallery() {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-end',
-            marginBottom: '3rem',
+            marginBottom: '2rem',
             borderBottom: '1px solid oklch(97% 0.007 75 / 0.08)',
-            paddingBottom: '2rem',
+            paddingBottom: '1.5rem',
           }}
         >
           <div>

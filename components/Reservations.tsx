@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 
@@ -42,11 +43,30 @@ export default function Reservations() {
     <section
       id="reservations"
       ref={ref}
-      style={{ paddingTop: '9rem', paddingBottom: '9rem', background: 'oklch(94% 0.009 78)' }}
+      style={{ paddingTop: '5.5rem', paddingBottom: '5.5rem', background: 'oklch(94% 0.009 78)', position: 'relative', overflow: 'hidden' }}
     >
-      <div className="max-w-7xl mx-auto px-6">
+      {/* Subtle background food image */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: 'none',
+        }}
+      >
+        <Image
+          src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=1400&q=60"
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: 'cover', opacity: 0.05 }}
+          aria-hidden
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6" style={{ position: 'relative', zIndex: 1 }}>
         <div
-          style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '5rem' }}
+          style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '4rem' }}
           className="lg:grid-cols-2"
         >
           {/* Left */}
@@ -100,7 +120,7 @@ export default function Reservations() {
                 lineHeight: 1.78,
                 color: 'oklch(52% 0.012 60)',
                 maxWidth: '380px',
-                marginBottom: '3rem',
+                marginBottom: '2.5rem',
               }}
             >
               We seat guests Tuesday through Sunday, 18:30 to 22:00. Weekend lunch from 12:30. For parties of eight or more, please contact us directly.

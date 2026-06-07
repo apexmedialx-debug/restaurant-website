@@ -266,7 +266,7 @@ export default function Menu() {
           </div>
 
           {/* Dishes */}
-          <div style={{ padding: '3rem 3.5rem 6rem' }} className="lg:pt-[7rem] lg:pb-[8rem] lg:pl-[4rem] lg:pr-[4rem]">
+          <div style={{ padding: '2.5rem 2.5rem 4rem' }} className="lg:pt-[4.5rem] lg:pb-[5rem] lg:pl-[4rem] lg:pr-[4rem]">
             {DISHES.map((d, i) => (
               <DishRow key={d.id} dish={d} index={i} />
             ))}
