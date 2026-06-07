@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant, Raleway } from "next/font/google";
+import { Gilda_Display, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant({
-  variable: "--font-cormorant",
+const gildaDisplay = Gilda_Display({
+  variable: "--font-gilda",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: "400",
   display: "swap",
 });
 
-const raleway = Raleway({
-  variable: "--font-raleway",
+const josefinSans = Josefin_Sans({
+  variable: "--font-josefin",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["100", "200", "300", "400"],
   display: "swap",
 });
 
@@ -27,7 +26,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${raleway.variable}`}>
+    <html lang="en" className={`${gildaDisplay.variable} ${josefinSans.variable}`}>
       <body>{children}</body>
     </html>
   );

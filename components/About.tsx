@@ -61,7 +61,7 @@ export default function About() {
           alt=""
           fill
           sizes="100vw"
-          style={{ objectFit: 'cover', opacity: 0.045 }}
+          style={{ objectFit: 'cover', opacity: 0.11 }}
           aria-hidden
         />
       </div>

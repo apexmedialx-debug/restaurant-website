@@ -59,7 +59,7 @@ export default function Reservations() {
           alt=""
           fill
           sizes="100vw"
-          style={{ objectFit: 'cover', opacity: 0.05 }}
+          style={{ objectFit: 'cover', opacity: 0.1 }}
           aria-hidden
         />
       </div>

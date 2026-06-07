@@ -94,7 +94,7 @@ export default function Hero() {
 
       {/* Main content */}
       <motion.div
-        style={{ y: contentY, opacity, position: 'relative', zIndex: 1, width: '100%', paddingBottom: '6rem' }}
+        style={{ y: contentY, opacity, position: 'relative', zIndex: 1, width: '100%', paddingBottom: '3.5rem' }}
       >
         <div className="max-w-7xl mx-auto px-6">
 
@@ -181,7 +181,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            style={{ display: 'flex', gap: '1rem', marginTop: '3rem', flexWrap: 'wrap' }}
+            style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}
           >
             <a
               href="#reservations"
